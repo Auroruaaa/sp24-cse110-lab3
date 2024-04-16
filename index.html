@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta chatset = "utf-8" />
+        <meta charset="utf-8" />
         <title>Beijie's First HTML</title>
         <link rel="icon" href="https://github.com/Auroruaaa/CSE110/blob/main/favicon.ico?raw=true">
     </head>
     <body>
         <header>
             <h1>Weekly Meeting Minute 2</h1>
-            <time>04.10.2024</time>
+            <time datetime="2024-04-10">April 10</time>
         </header>
         <nav>
             <a href="https://github.com/Auroruaaa">Home</a> | 
@@ -32,23 +32,23 @@
                 </details>
             </section>
 
-            <hr />
+            <br />
 
             <section>
                 <h2>Agenda</h2>
                 <p><span>Some students from UCSD gathered together and discussed about the their quarterly schedule for Spring 2024. This week they decided to <strong>make a prediction for possible topics of the incoming CSE 110 Lab 2</strong>.</span></p>
             </section>
 
-            <hr />
+            <br />
 
             <section>
                 <h2>Topics</h2>
                 <h3>Unfinished Topics from Last Meeting</h3>
                 <ol>
                     <li>What genre will be used for the first writing assignment</li>
-                    <p><div>[Covered this week]</div></p>
+                    [Covered this week]
                     <li>Whose cat is the cutest to be the team mascot</li>
-                    <p><div>[Covered this week] - <b>And we decided to choose Beijie's lovely cat Mimi!</b></div></p>
+                    [Covered this week] - <b>And we decided to choose Beijie's lovely cat Mimi!</b>
                 </ol>
                 <h3>Topics for This Week - Possible Topic for CSE110 Lab2</h3>
                 <ol>
@@ -61,19 +61,17 @@
             <section>
                 <h2>Comments</h2>
                 <p>
-                    <b class="keywords">Jason</b>: "<i>Next week</i> we can talk about what clubs to attend after class." <br />
+                    <b class="keywords">Jason</b>: "<i>Next week</i> we can talk about what clubs to attend after class."
                     <b class="keywords">Sun</b>: "Lab 2 <em>might</em> contain several topics".
                 </p>
             </section>
 
         </main>
-
-        <br />
     
         <footer>
             <h3>Check out our lovely Team Mascot Mimi!</h3>
             <img src="https://github.com/Auroruaaa/CSE110/blob/main/Moscot.jpg?raw=true" alt="Trulli" style="width:400px;height:290px;">
-            <figcaption>Listen to our Meeting Moscot - Mimi's snore</figcaption>
+            <p><div>Listen to our Meeting Moscot - Mimi's snore</div></p>
             <audio controls src="https://github.com/Auroruaaa/CSE110/blob/main/Snore.m4a?raw=true"></audio>
             <br />
             <a href="https://github.com/Auroruaaa/CSE110/blob/main/Snore.m4a?raw=true"></a>
@@ -84,7 +82,7 @@
 
                 <h3>If you are interested in joining us, fill out the form below</h3>
         <fieldset>
-            <form action="" method="post">
+            <form method="post">
                 <label>
                     Name:
                     <input type="text" name="submitted-name" autocomplete="name" />
@@ -101,11 +99,11 @@
                     Email(campus email, if you don't have one, use your personal email):
                     <input type="text" name="email" />
                 </label> <br />
-    
-                <legend>Are you a current triton at UCSD?</legend>
-                <label><input type="radio" name="radio" value="yes" /> Yes</label>
-                <label><input type="radio" name="radio" value="no" /> No</label>
-                <br />
+                <fiedset>
+                    <legend>Are you a current triton at UCSD?</legend>
+                    <label><input type="radio" name="radio" value="yes" /> Yes</label>
+                    <label><input type="radio" name="radio" value="no" /> No</label>
+                </fiedset>
 
                 <label for="year">What year are you in?</label>
                 <input list="year-choice" id="year" name="year" />
@@ -118,7 +116,6 @@
                     <option value="Alumnus"></option>
                     <option value="Others"></option>
                 </datalist>
-                <br />
 
                 <label for="pet-select">Choose your favorite animal:</label>
                 <select name="pets" id="pet-select">
