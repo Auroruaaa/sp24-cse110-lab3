@@ -1,3 +1,3 @@
-# Lab 2
+# Lab 3
 
-[Web Page](https://auroruaaa.github.io/CSE110_Lab2/)
+The Nwe [Web Page](https://auroruaaa.github.io/sp24-cse110-lab3/) for Lab 3
