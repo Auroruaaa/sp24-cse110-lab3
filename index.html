@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head id='heading'>
         <meta charset="utf-8" />
         <title>Beijie's First HTML</title>
         <link rel="icon" href="https://github.com/Auroruaaa/CSE110/blob/main/favicon.ico?raw=true">
@@ -17,9 +17,9 @@
         </nav>
 
         <main>
-            <section>
-                <h2>Attendance</h2>
-                <ul>
+            <section id='section1'>
+                <h2 id='att'>Attendance</h2>
+                <ul id='att-name'>
                     <li>Beijie Cheng</li>
                     <li>Jason Jackson</li>
                     <li>Tonia Bernstein</li>
@@ -33,12 +33,12 @@
                 </details>
             </section>
 
-            <section>
+            <section id='section2'>
                 <h2>Agenda</h2>
                 <p><span>Some students from UCSD gathered together and discussed about the their quarterly schedule for Spring 2024. This week they decided to <strong>make a prediction for possible topics of the incoming CSE 110 Lab 2</strong>.</span></p>
             </section>
 
-            <section>
+            <section id='section3'>
                 <h2>Topics</h2>
                 <h3>Unfinished Topics from Last Meeting</h3>
                 <ol>
@@ -64,7 +64,7 @@
                 </ol>
             </section>
 
-            <section>
+            <section id='section4'>
                 <h2>Comments</h2>
                 <p>
                     <b class="keywords">Jason</b>: "<i>Next week</i> we can talk about what clubs to attend after class."
@@ -87,43 +87,43 @@
         </footer>
 
                 <h3>If you are interested in joining us, fill out the form below</h3>
-        <fieldset>
+        <fieldset id='outer-fieldset'>
             <form method="post">
-                <section>
+                <section id='section5'>
                     <label>
                         Name:
                         <input type="text" name="submitted-name" autocomplete="name" />
                     </label>
                 </section>
 
-                <section>
+                <section id='section6'>
                     <label>
                         Date of Birth(MM/DD/YY):
                         <input type="date" name="birth-date" />
                     </label>
                 </section>
 
-                <section>
+                <section id='section7'>
                     <label>
                         Do you have a UCSD email?
                         <input type="checkbox" name="campus-email" />
                     </label>
                 </section>
 
-                <section>
+                <section id='section8'>
                     <label>
                         Email(campus email, if you don't have one, use your personal email):
                         <input type="text" name="email" />
                     </label>
                 </section>
 
-                <fieldset>
+                <fieldset id='inner'>
                     <legend>Are you a current triton at UCSD?</legend>
                     <label><input type="radio" name="radio" value="yes" /> Yes</label>
                     <label><input type="radio" name="radio" value="no" /> No</label>
                 </fieldset>
 
-                <section>
+                <section id='section9'>
                     <label for="year">What year are you in?</label>
                     <input list="year-choice" id="year" name="year" />
                     <datalist id="year-choice">
@@ -137,7 +137,7 @@
                     </datalist>
                 </section>
 
-                <section>
+                <section id='section10'>
                     <label for="pet-select">Choose your favorite animal:</label>
                     <select name="pets" id="pet-select">
                         <option value="">--Please choose an option--</option>
