@@ -107,14 +107,15 @@ details {
   display: inline-block;
 }
 
-#section2 { /*agenda*/
+section.section2 { /*agenda*/
   color:hsl(0, 55%, 50%);
   max-width: 15in;
+  & > p{
+    padding-left: 2em;
+  }
 
 }
-& > p{
-  padding-left: 2em;
-}
+
 
 h2.agenda{
   color:hsl(0, 69%, 36%);
