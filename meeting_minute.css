@@ -4,3 +4,24 @@ head {
     color: black
   }
 }
+
+body {
+  nav {
+    color: #f09
+  }
+  main {
+    section {
+      h2 {
+        color: hsl(150 30% 60%)
+      }
+      ul {
+        color: rgb(255 0 153)
+      }
+      h3 {
+        color_mix: 
+    }
+  }
+  form {
+    color(from hsl(0 100% 50%) xyz x y z)
+  }
+}
