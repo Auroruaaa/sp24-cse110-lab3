@@ -1,7 +1,12 @@
 /* This file is used to format the style of Meeting_Minute file index.html */
+* {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 title {
   color: black;
   margin: 25px 50px;
+  text-align: center;
 }
 
 nav {
@@ -50,6 +55,8 @@ li {
   font-size: 0.8in; /*absolute unit 2*/
   border-style: dotted;
   border-color: red;
+  border-width: 4px 1.25em;
+  border-radius: 30px;
 )
 
 #outer-fieldset{
@@ -71,7 +78,12 @@ li {
   padding-left: 3em;
 }
 
+#warning-in-form {
+  color: hsla(237deg 74% 33% / 61%);
+  text-decoration: underline;
+  text-align: justify;;
 
+}
 
 
 
