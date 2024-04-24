@@ -1,75 +1,208 @@
 /* This file is used to format the style of Meeting_Minute file index.html */
+
+@media (max-width: 599px) {
+  body {
+      background-color: lightblue;
+      font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  body {
+      background-color: lightblue;
+      font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+      background-color: lightblue;
+      font-size: 22px;
+  }
+
+}
+
 * {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-title {
+
+h1:has(+ h2){
   color: black;
-  margin: 25px 50px;
-  text-align: center;
+  font-size: 1.5cm;
+  position: sticky;
+  top: 20px;
 }
 
-nav {
-  color: #f09;
-  font-size: 0.8cm;  /*absolute unit 1*/
+h1 + #section1 {
+  background-color: rgb(107, 178, 202);
+}
+#section3 ~ #section5 {
+  border: 1px solid blue;
 }
 
-#section1 {
-  color: hsl(150 30% 60%);
-  fallback: upper-alpha;
+time, nav {
+  margin: 5px 40px;
+  color: #540172;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+#section1 { /*attendence*/
+  color: hsl(240, 80%, 30%);
+  
 }
 
 #att {
-  color: color(from hsl(0 100% 50%) xyz x y z);
+  color: rgb(59, 48, 178);
+  fallback: upper-alpha;
 }
 
 /* Set the background color for presented members' name */
 #att-name1{
   background-color: color-mix(in srgb, #34c9eb 0%, white);
+  border: 1px solid rgb(20%, 15%, 80%);
+  width: 10pc;
+  padding: .5mm;
 }
 #att-name2{
-  background-color: color-mix(in srgb, #34c9eb 25%, white);
+  background-color: color-mix(in srgb, #34c9eb 20%, white);
+  border: 1px solid rgb(20%, 15%, 80%);
+  width: 10pc;
+  padding: .5mm;
 }
 #att-name3{
-  background-color: color-mix(in srgb, #34c9eb 50%, white);
+  background-color: color-mix(in srgb, #34c9eb 40%, white);
+  border: 1px solid rgb(20%, 15%, 80%);
+  width: 10pc;
+  padding: .5mm;
 }
 #att-name4{
-  background-color: color-mix(in srgb, #34c9eb 75%, white);
+  background-color: color-mix(in srgb, #34c9eb 60%, white);
+  border: 1px solid rgb(20%, 15%, 80%);
+  width: 10pc;
+  padding: .5mm;
 }
 #att-name5{
-  background-color: color-mix(in srgb, #34c9eb 100%, white);
+  background-color: color-mix(in srgb, #34c9eb 80%, white);
+  border: 1px solid rgb(20%, 15%, 80%);
+  width: 10pc;
+  padding: .5mm;
 }
 #att-name6{
-  background-color: color-mix(in srgb, #34c9eb, white);
+  background-color: color-mix(in srgb, #34c9eb 100%, white);
+  border: 1px solid rgb(20%, 15%, 80%);
+  width: 10pc;
+  padding: .5mm;
 }
 
-.absnece,
-li {
-  border: 2px solid blue;
+details {
+  border: 2px solid rgb(20%, 15%, 80%);
   padding: .5em;
+  width:75%;
+  display: inline-block;
 }
 
+#section2 { /*agenda*/
+  color:hsl(0, 55%, 50%);
+  max-width: 15in;
+  & > p {
+      padding-left: 2em;
+  }
+}
+
+h2.agenda{
+  color:hsl(0, 69%, 36%);
+}
+
+#section3 { /*topics*/
+  color:rgb(42, 142, 75);
+}
+
+#unfinished ~ #weekly-topics {
+  font-size: 7mm;
+}
+
+#section3 li {
+  color: rgb(54, 179, 49);
+}
+#section4{ /*comments*/
+  color:hsl(55, 64%, 33%);
+}
+.keywords{
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-left: 2em;
+}
+#topic-list {
+  display: inline-block;
+}
+
+footer {
+  display: grid;
+  justify-content: center;
+
+}
 
 #mimi{
   color: color-mix(in srgb, blue 80%, red 80%);
-  font-size: 0.8in; /*absolute unit 2*/
+  text-align: center;
+  font-size: 0.34in; /*absolute unit 2*/
   border-style: dotted;
   border-color: red;
   border-width: 4px 1.25em;
-  border-radius: 30px;
-)
+  border-radius: 25px;
+}
+
+audio{
+  width:5in;
+  position: static;
+}
+
+#jointeam {
+  color: hsl(282, 59%, 53%);
+  height: 1cm;
+}
 
 #outer-fieldset{
   font-size: 1em;  /*reletive unit 1*/
-  width: 1000vw;   /*reletive unit 2*/
-  margin-top: 40px;
-  margin-right: 30px;
+  width: 80vw;   /*reletive unit 2*/
+  text-align: left;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 10in 50px 100px;
+
+}
+
+form[title='Interest Form'] {
+  margin-top: 20px;
+  margin-right: 20px;
   margin-bottom: 40px;
   margin-left: 4em;
+  max-height: none;
+  max-width: none;
 }
+
+button:hover {
+  color: blue;
 }
+
+input:hover, select:hover, textarea:hover {
+  border: 2px solid darkblue;
+}
+
+textarea:active {
+  background-color: lightyellow;
+  border: 2px solid orange;
+}
+
 #inner-fieldset{
-  width: 400px;    /*reletive unit 3*/
+  width: 10px;    /*reletive unit 3*/
   font-size: 11mm; /*absolute unit 3*/
   margin: auto;
   padding-top: 10px;
@@ -78,11 +211,12 @@ li {
   padding-left: 3em;
 }
 
+
 #warning-in-form {
   color: hsla(237deg 74% 33% / 61%);
+  font-size: 3mm;
   text-decoration: underline;
-  text-align: justify;;
-
+  text-align: justify;
 }
 
 
