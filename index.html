@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+    <head id='heading'>
         <meta charset="utf-8" />
         <title>Beijie's First HTML</title>
         <link rel="icon" href="https://github.com/Auroruaaa/CSE110/blob/main/favicon.ico?raw=true">
+        <link rel="stylesheet" href="meeting_minute.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <h1>Weekly Meeting Minute</h1>
+            <h2 id="head-h2">This formate is designed on Lab 3.</h2>
             <time datetime="2024-04-10">April 10</time>
         </header>
         <nav>
@@ -16,15 +21,15 @@
         </nav>
 
         <main>
-            <section>
-                <h2>Attendance</h2>
-                <ul>
-                    <li>Beijie Cheng</li>
-                    <li>Jason Jackson</li>
-                    <li>Tonia Bernstein</li>
-                    <li>Ida Richey</li>
-                    <li>Sun Tang</li>
-                    <li>Maurice Ayot</li>
+            <section id='section1'>
+                <h2 id='att'>Attendance</h2>
+                <ul id='att-name'>
+                    <li id='att-name1'>Beijie Cheng</li>
+                    <li id='att-name2'>Jason Jackson</li>
+                    <li id='att-name3'>Tonia Bernstein</li>
+                    <li id='att-name4'>Ida Richey</li>
+                    <li id='att-name5'>Sun Tang</li>
+                    <li id='att-name6'>Maurice Ayot</li>
                 </ul>
                 <details>
                     <summary>Absent from meeting</summary>
@@ -32,14 +37,15 @@
                 </details>
             </section>
 
-            <section>
-                <h2>Agenda</h2>
-                <p><span>Some students from UCSD gathered together and discussed about the their quarterly schedule for Spring 2024. This week they decided to <strong>make a prediction for possible topics of the incoming CSE 110 Lab 2</strong>.</span></p>
+            <section class='section2'>
+                <h2 class='agenda'>Agenda</h2>
+                <p><span>Some students from UCSD gathered together and discussed about the their quarterly schedule for Spring 2024. 
+                    This week they decided to <strong>make a prediction for possible topics of the incoming CSE 110 Lab 2</strong>.</span></p>
             </section>
 
-            <section>
-                <h2>Topics</h2>
-                <h3>Unfinished Topics from Last Meeting</h3>
+            <section id='section3'>
+                <h2 id='topics'>Topics</h2>
+                <h3 id='unfinished'>Unfinished Topics from Last Meeting</h3>
                 <ol>
                     <li>
                         What genre will be used for the first writing assignment
@@ -55,18 +61,19 @@
                         </ul>
                     </li>
                 </ol>
-                <h3>Topics for This Week - Possible Topic for CSE110 Lab2</h3>
-                <ol>
-                    <li>Git in VSCode</li>
-                    <li>History of Software</li>
-                    <li>Webpage Design</li>
+                <h3 id='weekly-topics'>Topics for This Week - Possible Topic for CSE110 Lab2</h3>
+                <ol id="topic-list">
+                    <li id='t1'>Git in VSCode</li>
+                    <li id='t2'>History of Software</li>
+                    <li id='t3'>Webpage Design</li>
                 </ol>
             </section>
 
-            <section>
-                <h2>Comments</h2>
+            <section id='section4'>
+                <h2 id='comment'>Comments</h2>
                 <p>
                     <b class="keywords">Jason</b>: "<i>Next week</i> we can talk about what clubs to attend after class."
+                    <br>
                     <b class="keywords">Sun</b>: "Lab 2 <em>might</em> contain several topics".
                 </p>
             </section>
@@ -74,55 +81,56 @@
         </main>
     
         <footer>
-            <h3>Check out our lovely Team Mascot Mimi!</h3>
-            <img src="https://github.com/Auroruaaa/CSE110/blob/main/Moscot.jpg?raw=true" alt="Trulli" style="width:400px;height:290px;">
-            <div>Listen to our Meeting Moscot - Mimi's snore</div>
+            <h3 id='mimi'>Check out our lovely Team Mascot Mimi!</h3>
+            <img src="https://github.com/Auroruaaa/CSE110/blob/main/Moscot.jpg?raw=true" alt="Trulli" style="width:800px;height:580px;">
+            <div>Listen to our Meeting Moscot - Mimi's snore:
             <audio controls src="https://github.com/Auroruaaa/CSE110/blob/main/Snore.m4a?raw=true"></audio>
+            </div>
             <br />
             <a href="https://github.com/Auroruaaa/CSE110/blob/main/Snore.m4a?raw=true"></a>
-            <video controls width="250">
+            <video controls width="300">
                 <source src="https://github.com/Auroruaaa/CSE110/blob/main/Drinking.mp4?raw=true" type="video/mp4">
             </video>
         </footer>
 
-                <h3>If you are interested in joining us, fill out the form below</h3>
-        <fieldset>
+                <h3 id='jointeam'>If you are interested in joining us, fill out the form below</h3>
+        <fieldset id='outer-fieldset'>
             <form method="post">
-                <section>
+                <section id='section5'>
                     <label>
                         Name:
                         <input type="text" name="submitted-name" autocomplete="name" />
                     </label>
                 </section>
 
-                <section>
+                <section id='section6'>
                     <label>
                         Date of Birth(MM/DD/YY):
                         <input type="date" name="birth-date" />
                     </label>
                 </section>
 
-                <section>
+                <section id='section7'>
                     <label>
                         Do you have a UCSD email?
                         <input type="checkbox" name="campus-email" />
                     </label>
                 </section>
 
-                <section>
+                <section id='section8'>
                     <label>
                         Email(campus email, if you don't have one, use your personal email):
                         <input type="text" name="email" />
                     </label>
                 </section>
 
-                <fieldset>
+                <fieldset id='inner'>
                     <legend>Are you a current triton at UCSD?</legend>
                     <label><input type="radio" name="radio" value="yes" /> Yes</label>
                     <label><input type="radio" name="radio" value="no" /> No</label>
                 </fieldset>
 
-                <section>
+                <section id='section9'>
                     <label for="year">What year are you in?</label>
                     <input list="year-choice" id="year" name="year" />
                     <datalist id="year-choice">
@@ -136,7 +144,7 @@
                     </datalist>
                 </section>
 
-                <section>
+                <section id='section10'>
                     <label for="pet-select">Choose your favorite animal:</label>
                     <select name="pets" id="pet-select">
                         <option value="">--Please choose an option--</option>
@@ -152,7 +160,7 @@
                 <textarea name="comments" rows="6" cols="40">Leave your comments and ideas here</textarea> <br />
     
                 <button>Save</button>
-                <p><i>Do <b>not</b> really press this button because it will lead to an error page</i></p>
+                <p id='warning-in-form'><i>Do <b>not</b> really press this button because it will lead to an error page</i></p>
     
             </form>
         </fieldset>
